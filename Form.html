@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICT Division Form</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+      }
+      .form-container {
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+      .form-header {
+          background-color: #f9f9f9;
+          padding: 20px;
+          text-align: center;
+      }
+      form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .form-group {
+          width: 48%;
+          margin-bottom: 20px;
+      }
+      label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+      }
+      input, select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      input[type="radio"] {
+          width: auto;
+      }
+      .submit-btn {
+          text-align: center;
+          width: 100%;
+      }
+      .submit-btn input {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      .submit-btn input:hover {
+          background-color: #45a049;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="./ICT Division Logo.png"
+        alt="ICT Division Logo"
+        width="100px"
+      />
+      <img
+        src="./Learning and Earning Logo.jpeg"
+        alt="Learning and Earning Logo"
+        width="100px"
+        style="text-align: center"
+      />
+    </div>
+    <hr />
+    <div>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #ded8d8;
+            }
+            li {
+              float: left;
+            }
+            li a {
+      display: block;
+      color: rgb(2, 1, 1);
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+    li a:hover {
+      background-color: #9f9a9a;
+    }
+          </style>
+   
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Course Module-2020">Course Module-2020</a></li>
+        <li><a href="Class Schedule">Class Schedule</a></li>
+        <li><a href="Success Story">Success Story</a></li>
+        <li><a href="./Attendence">Attendence</a></li>
+        <li><a href="FAQ">FAQ</a></li>
+        <li><a href="Login">Login</a></li>
+      </ul>
+    </div>
+    <style>
+name {
+margin: 0;
+padding: 0;
+color: #e1da97;
+background-color: #ece5e5;
+
+}
+
+
+    </style>
+<div class="name" id="name" >
+    
+    <style>
+        p {
+        margin: 14;
+        padding: 14;
+        color: #cf5c04;
+        background-color: #f7f5f1;
+        font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+        </style>
+    
+    <p>Student Registration Form </p>
+    <hr>
+</div>
+
+    <div class="paragraph">
+       <style> 
+       #line {
+        color: #1e1004;
+       font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+    </style>
+    <p id="line">
+        Please enter relevent information 
+    </p>
+    </div>
+   <div class="form">
+    <form action="form.php">
+
+<div class="form-group">
+  <label for="district">District<small> (Institute District:Where you want do your course)*</label>
+  <br><select id="district" name="district">
+      <option value="">--Select One--</option>
+      <option value="Ctg">Ctg</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Barishal">Barishal</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="Course">Course*</label><br>
+  <select name="Course" id="Course">
+<option value="">--Select one--</option>
+<option value="">Computer Oparetor</option>
+<option value="">Freelancing</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="Student Name">Student Name*</label>
+  <br>
+  <input type="name">
+</div>
+<div class="form-group">
+  <label for="Father Name">Father Name</label><br>
+  <input type="name">
+</div>
+<div class="form-group">
+  <label for="Mother Name">Mother Name</label><br>
+  <input type="name">
+</div>
+
+<div class="form-group">
+  <fieldset>
+    <legend>Date of Birth</legend>
+  <br>
+  <label for="Date">Date</label>
+  <input type="date" id="birthday" name="birthday">
+</fieldset>
+</div>
+<div class="form-group">
+<label for="Gender">Gender*</label>
+<input type="radio" name="Gender" id="Male" value="Male">Male
+
+<input type="radio" name="Gender" id="Female" value="Female">Female
+</div>
+<div class="form-group">
+  <label for="Physically Handicapped*">Physically Handicapped*</label>
+  <input type="radio" name="Physically Handicapped*" id="Yes" value="Yes">Yes
+<input type="radio" name="Physically Handicapped*" id="No" value="No">No
+</div>
+<div class="form-group">
+  <label for="email">Email*</label><br>
+<input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+</div>
+<div class="form-group">
+<label for="Phone">Phone(Must be 11 digits)*</label><br>
+<input type="phone number" name="phone number" id="phone number" required><br>
+(e.g:0155123456)
+
+</div>
+<div class="form-group">
+  <label for="idType">Identification Type*</label><br>
+ 
+  <select id="idType" name="idType">
+  <option value="">--Select One--</option>
+  <option value="10 digit">10 digit</option>
+  <option value="17 digit">17 digit</option>
+  <option value="13 digit">13digit</option>
+</select>
+</div>
+<div>
+  Identification No.(Must be 10 digits for new NID or 17 digits for old NID.If your national ID is 13 digits,then plz add birth year.
+
+  </div
+
+  <div class="form-group">
+    <label for="homeDistrict">Home District*</label>
+    <select id="homeDistrict" name="homeDistrict">
+        <option value="">--Select One--</option>
+        <!-- Add options here -->
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="upazila">Upazila*</label>
+    <select id="upazila" name="upazila">
+        <option value="">--Select One--</option>
+        <!-- Add options here -->
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="village">Village/House No./Road No./Other*</label>
+    <input type="text" id="village" name="village">
+</div>
+
+<div class="form-group">
+    <label for="postOffice">Post Office*</label>
+    <input type="text" id="postOffice" name="postOffice">
+</div>
+
+<div class="form-group">
+    <label for="qualification">Educational Qualification*</label>
+    <select id="qualification" name="qualification">
+        <option value="">--Select One--</option>
+        <!-- Add options here -->
+    </select>
+</div>
+
+<div class="form-group">
+    <label>Have any computer?*</label>
+    <input type="radio" id="compYes" name="computer" value="yes"> Yes
+    <input type="radio" id="compNo" name="computer" value="no"> No
+</div>
+
+<div class="form-group">
+    <label for="photo">Photograph*</label>
+    <input type="file" id="photo" name="photo">
+</div>
+
+<div class="form-group">
+    <label for="signature">Signature*</label>
+    <input type="file" id="signature" name="signature">
+</div>
+
+<div class="submit-btn">
+    <input type="submit" value="Submit Data">
+</div>
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form> 
